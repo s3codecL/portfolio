@@ -62,71 +62,100 @@
 }
 
 .cert-category__icon {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    /* Smaller icon */
+    height: 50px;
     background: rgba(99, 102, 241, 0.1);
-    border-radius: 12px;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 1.5rem;
-    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
 }
 
 .cert-category__title {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
+    /* Smaller title */
     font-weight: 700;
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
     color: #fff;
 }
 
 .cert-category__list {
     list-style: none;
     padding: 0;
+    width: 100%;
 }
 
 .cert-category__list li {
-    padding: 0.5rem 0;
+    padding: 0.3rem 0;
     color: var(--text-muted);
-    font-size: 0.95rem;
+    font-size: 0.8em;
+    /* Smaller text */
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    justify-content: center;
+    /* Center list items */
+    gap: 0.4rem;
 }
 
 .cert-category__list li::before {
     content: "✓";
     color: var(--primary);
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
 }
 
 .certifications__cta {
     text-align: center;
-    padding: 2rem;
-    background: rgba(99, 102, 241, 0.05);
-    border: 2px dashed rgba(99, 102, 241, 0.3);
-    border-radius: 15px;
+    padding: 2.5rem;
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(168, 85, 247, 0.05));
+    border: 1px solid rgba(99, 102, 241, 0.2);
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    max-width: 800px;
+    margin: 0 auto;
+    /* Center the container */
+}
+
+/* Shine effect on background */
+.certifications__cta::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center, rgba(99, 102, 241, 0.15) 0%, transparent 70%);
+    pointer-events: none;
 }
 
 .certifications__cta-text {
-    font-size: 1.1rem;
-    margin-bottom: 1.5rem;
-    color: var(--text-muted);
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    color: #e2e8f0;
 }
 
 .certifications__cta-button {
     background: var(--primary);
     color: #fff;
-    padding: 1rem 2.5rem;
-    border-radius: 10px;
-    font-weight: 600;
+    padding: 1.2rem 3rem;
+    /* Larger comfortable area */
+    border-radius: 12px;
+    font-weight: 700;
     font-size: 1.1rem;
     text-decoration: none;
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 0.75rem;
-    transition: all 0.3s ease;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    min-width: 300px;
+    /* Ensure substantial width */
 }
 
 .certifications__cta-button:hover {
