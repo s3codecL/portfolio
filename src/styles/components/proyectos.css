@@ -109,15 +109,21 @@
     }
 
     .project-card__title {
-        font-size: 1.25rem;
+        font-size: 1.1rem;
     }
 
     .project-card__desc {
-        font-size: 0.9rem;
-        margin-bottom: 1rem;
+        font-size: 0.85rem;
+        margin-bottom: 0.8rem;
     }
 
     .project-card__tags {
         margin-bottom: 1rem;
+        gap: 0.3rem;
+    }
+
+    .project-tag {
+        font-size: 0.7rem;
+        padding: 0.2rem 0.6rem;
     }
 }
