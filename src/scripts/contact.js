@@ -5,7 +5,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // Regístrate en https://formspree.io y crea un nuevo formulario para obtener tu ID
     const FORMSPREE_ID = 'xbdagorj';
 
+    console.log('Contact script loaded. Form ID:', FORMSPREE_ID);
+
     if (contactForm) {
+        console.log('Contact form found, attaching listener');
         contactForm.addEventListener('submit', async (e) => {
             e.preventDefault();
 
