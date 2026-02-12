@@ -4,15 +4,21 @@
     margin: 0 auto;
 }
 
-.stats__container {
-    background: var(--glass-bg);
-    border: 1px solid var(--glass-border);
-    padding: 3rem;
-    border-radius: 2rem;
-    backdrop-filter: blur(10px);
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+background: var(--glass-bg);
+border: 1px solid var(--glass-border);
+padding: 2rem;
+/* Reduced padding */
+border-radius: 2rem;
+backdrop-filter: blur(10px);
+display: flex;
+flex-direction: column;
+gap: 1.5rem;
+width: fit-content;
+/* Fit content */
+margin: 0 auto;
+/* Center */
+min-width: min(100%, 800px);
+/* Ensure it's not too small but capped */
 }
 
 .stats__header {

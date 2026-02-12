@@ -26,13 +26,16 @@
 .certifications__grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
+    padding: 2rem;
+    gap: 1.5rem;
     margin-bottom: 3rem;
+    justify-content: center;
 }
 
 /* Fifth item spans 2 columns and centers */
 .cert-category:nth-child(5) {
-    grid-column: 2 / 4;
+    grid-column: auto;
+    /* Reset column span to fit naturally or keep if grid is used */
 }
 
 .cert-category {
@@ -40,8 +43,15 @@
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 15px;
-    padding: 2rem;
+    padding: 1.5rem;
+    /* Reduced padding */
     transition: all 0.3s ease;
+    max-width: 350px;
+    /* Limit width */
+    margin: 0 auto;
+    /* Center if shorter */
+    height: fit-content;
+    /* Fit to content height */
 }
 
 .cert-category:hover {
