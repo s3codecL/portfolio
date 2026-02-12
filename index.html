@@ -14,9 +14,10 @@
 
 <body>
   <header class="header">
-    <div class="header__logo">
-      <span style="font-weight: 800; letter-spacing: -1px;">GA.DEV</span>
-    </div>
+    <a href="https://github.com/s3codecL" target="_blank" class="header__logo"
+      style="text-decoration: none; color: inherit;">
+      <span style="font-weight: 800; letter-spacing: -1px;">s3codecl</span>
+    </a>
     <nav class="header__nav">
       <ul class="nav__list">
         <li><a href="#sobre-mi" class="nav__link">Sobre mí</a></li>
@@ -34,57 +35,153 @@
   <main>
     <section class="hero" id="sobre-mi">
       <div class="hero__content">
-        <span class="hero__welcome" style="color: var(--primary); font-weight: 600;">Bienvenido a mi portafolio</span>
-        <h1>Gustavo Andrade</h1>
-        <p>Full Stack Python Dev | Django | Front End | Data Science Engineering Student. Especialista en crear
-          soluciones robustas, escalables y con una estética de última generación.</p>
-        <div class="hero__ctas">
-          <a href="#contacto" class="btn btn--primary"
-            style="background: var(--primary); color: #fff; padding: 0.8rem 2rem; border-radius: 10px; font-weight: 600; display: inline-block;">Hablemos</a>
+        <span class="hero__welcome fade-in" style="color: var(--primary); font-weight: 600;">GUSTAVO ANDRADE</span>
+        <h1 class="fade-in fade-in-delay-1">
+          <span class="hero__highlight">4+ AÑOS DE</span>
+          EXPERIENCIA EN
+          <span class="hero__highlight">WEB DEVELOPMENT</span>
+        </h1>
+
+        <!-- Typing Effect -->
+        <div class="typing-container fade-in fade-in-delay-2" style="min-height: 60px; margin-bottom: 2rem;">
+          <p id="typing-text"
+            style="font-size: 1.2rem; color: var(--accent); font-weight: 600; font-family: 'Fira Code', monospace; display: inline;">
+            🚀 4+ Años de Experiencia Profesional
+          </p>
+          <span class="typing-cursor" style="color: var(--accent);">|</span>
         </div>
-      </div>
-      <div class="hero__image-container">
-        <div class="hero__glow"></div>
-        <div class="hero__image-wrapper">
-          <img src="assets/Retrato Blanco y negro (4).jpeg" alt="Gustavo Andrade" class="hero__image">
+
+        <p class="fade-in fade-in-delay-3"
+          style="font-size: 1.15rem; color: var(--text-muted); margin-bottom: 3rem; line-height: 1.8; max-width: 700px; margin-inline: auto;">
+          Full Stack Python Developer especializado en Django, React y soluciones escalables. Estudiante de Ingeniería
+          en Data Science con <strong style="color: var(--primary);">70+ certificaciones</strong>, apasionado por crear
+          experiencias digitales de última generación.
+        </p>
+
+        <div class="hero__ctas fade-in fade-in-delay-3">
+          <a href="#contacto" class="btn btn--primary"
+            style="background: var(--primary); color: #fff; padding: 1rem 2.5rem; border-radius: 10px; font-weight: 600; display: inline-block; font-size: 1.1rem;">
+            <i class="bi bi-send-fill" style="margin-right: 0.5rem;"></i>
+            Hablemos
+          </a>
         </div>
       </div>
     </section>
 
-    <section class="skills" id="skills">
-      <h3 class="skills__title">Habilidades Técnicas</h3>
-      <div class="skills__grid">
-        <div class="skill-card">
-          <img src="assets/svg/python.svg" alt="Python">
-          <span>Python</span>
+    <!-- Tech Stack Section -->
+    <section class="tech-stack-section" id="skills">
+      <h3 class="skills__title">🛠️ Tech Stack</h3>
+      <div class="tech-stack">
+        <!-- Programming Languages -->
+        <div class="tech-stack__category">
+          <h4 class="tech-stack__category-title">
+            <i class="bi bi-code-slash"></i>
+            Lenguajes de Programación
+          </h4>
+          <div class="tech-stack__badges">
+            <div class="tech-badge-item" data-tech="python">
+              <i class="bi bi-braces" style="color: #3776AB;"></i>
+              Python
+            </div>
+            <div class="tech-badge-item" data-tech="javascript">
+              <i class="bi bi-filetype-js" style="color: #F7DF1E;"></i>
+              JavaScript
+            </div>
+            <div class="tech-badge-item" data-tech="typescript">
+              <i class="bi bi-filetype-ts" style="color: #007ACC;"></i>
+              TypeScript
+            </div>
+            <div class="tech-badge-item" data-tech="sql">
+              <i class="bi bi-database" style="color: #336791;"></i>
+              SQL
+            </div>
+            <div class="tech-badge-item">
+              <i class="bi bi-terminal"></i>
+              Bash
+            </div>
+          </div>
         </div>
-        <div class="skill-card">
-          <img src="assets/svg/django.svg" alt="Django">
-          <span>Django</span>
+
+        <!-- Frontend -->
+        <div class="tech-stack__category">
+          <h4 class="tech-stack__category-title">
+            <i class="bi bi-brush"></i>
+            Frontend
+          </h4>
+          <div class="tech-stack__badges">
+            <div class="tech-badge-item" data-tech="react">
+              <i class="bi bi-atom" style="color: #61DAFB;"></i>
+              React
+            </div>
+            <div class="tech-badge-item">
+              <i class="bi bi-lightning-fill" style="color: #646CFF;"></i>
+              Next.js
+            </div>
+            <div class="tech-badge-item">
+              <i class="bi bi-filetype-html" style="color: #E34F26;"></i>
+              HTML5
+            </div>
+            <div class="tech-badge-item">
+              <i class="bi bi-filetype-css" style="color: #1572B6;"></i>
+              CSS3
+            </div>
+            <div class="tech-badge-item">
+              <i class="bi bi-wind" style="color: #38B2AC;"></i>
+              TailwindCSS
+            </div>
+          </div>
         </div>
-        <div class="skill-card">
-          <img src="assets/svg/react.svg" alt="React">
-          <span>React</span>
+
+        <!-- Backend -->
+        <div class="tech-stack__category">
+          <h4 class="tech-stack__category-title">
+            <i class="bi bi-server"></i>
+            Backend
+          </h4>
+          <div class="tech-stack__badges">
+            <div class="tech-badge-item" data-tech="django">
+              <i class="bi bi-bootstrap-fill" style="color: #092E20;"></i>
+              Django
+            </div>
+            <div class="tech-badge-item">
+              <i class="bi bi-lightning-charge" style="color: #009688;"></i>
+              FastAPI
+            </div>
+            <div class="tech-badge-item">
+              <i class="bi bi-hexagon-fill" style="color: #68A063;"></i>
+              Node.js
+            </div>
+            <div class="tech-badge-item" data-tech="postgresql">
+              <i class="bi bi-database-fill" style="color: #336791;"></i>
+              PostgreSQL
+            </div>
+          </div>
         </div>
-        <div class="skill-card">
-          <img src="assets/svg/javascript.svg" alt="JavaScript">
-          <span>JavaScript</span>
-        </div>
-        <div class="skill-card">
-          <img src="assets/svg/html5.svg" alt="HTML5">
-          <span>HTML5</span>
-        </div>
-        <div class="skill-card">
-          <img src="assets/svg/css.svg" alt="CSS3">
-          <span>CSS3</span>
-        </div>
-        <div class="skill-card">
-          <img src="assets/svg/postgresql.svg" alt="PostgreSQL">
-          <span>PostgreSQL</span>
-        </div>
-        <div class="skill-card">
-          <img src="assets/svg/bootstrap.svg" alt="Bootstrap">
-          <span>Bootstrap</span>
+
+        <!-- DevOps & Cloud -->
+        <div class="tech-stack__category">
+          <h4 class="tech-stack__category-title">
+            <i class="bi bi-cloud-fill"></i>
+            DevOps & Cloud
+          </h4>
+          <div class="tech-stack__badges">
+            <div class="tech-badge-item" data-tech="docker">
+              <i class="bi bi-box" style="color: #2496ED;"></i>
+              Docker
+            </div>
+            <div class="tech-badge-item" data-tech="kubernetes">
+              <i class="bi bi-diagram-3" style="color: #326CE5;"></i>
+              Kubernetes
+            </div>
+            <div class="tech-badge-item">
+              <i class="bi bi-github"></i>
+              GitHub Actions
+            </div>
+            <div class="tech-badge-item">
+              <i class="bi bi-microsoft" style="color: #0078D7;"></i>
+              Azure
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -117,28 +214,312 @@
       </div>
     </section>
 
+    <!-- Certificaciones Section -->
+    <section class="certifications" id="certificaciones">
+      <h3 class="skills__title">🎓 Certificaciones</h3>
+      <p class="certifications__intro">
+        Cuento con más de <span class="certifications__highlight">70+ certificaciones</span> de las principales
+        plataformas tecnológicas del mundo, organizadas en 5 áreas clave de especialización.
+      </p>
+
+      <div class="certifications__grid">
+        <!-- Cybersecurity -->
+        <div class="cert-category">
+          <div class="cert-category__icon">
+            <i class="bi bi-shield-lock-fill" style="color: var(--primary);"></i>
+          </div>
+          <h4 class="cert-category__title">🔐 Ciberseguridad</h4>
+          <ul class="cert-category__list">
+            <li>Google Cybersecurity Professional</li>
+            <li>Fortinet Network Security Expert (FCF)</li>
+            <li>SOC Operations 101</li>
+            <li>ISO 27001 Foundation</li>
+            <li>NIST Cybersecurity Framework</li>
+          </ul>
+        </div>
+
+        <!-- DevOps & Cloud -->
+        <div class="cert-category">
+          <div class="cert-category__icon">
+            <i class="bi bi-cloud-fill" style="color: var(--accent);"></i>
+          </div>
+          <h4 class="cert-category__title">☁️ DevOps & Cloud</h4>
+          <ul class="cert-category__list">
+            <li>DevOps Bootcamp Professional</li>
+            <li>Azure DevOps Engineer</li>
+            <li>Docker & Kubernetes Specialist</li>
+            <li>CI/CD Pipeline Expert</li>
+            <li>Infrastructure as Code (IaC)</li>
+          </ul>
+        </div>
+
+        <!-- Full Stack Development -->
+        <div class="cert-category">
+          <div class="cert-category__icon">
+            <i class="bi bi-code-square" style="color: #a855f7;"></i>
+          </div>
+          <h4 class="cert-category__title">💻 Full Stack</h4>
+          <ul class="cert-category__list">
+            <li>Oracle Next Education (ONE)</li>
+            <li>Full Stack Python Developer</li>
+            <li>React Specialist Certification</li>
+            <li>Django Framework Expert</li>
+            <li>TypeScript Advanced</li>
+          </ul>
+        </div>
+
+        <!-- AI & Data Science -->
+        <div class="cert-category">
+          <div class="cert-category__icon">
+            <i class="bi bi-robot" style="color: #22d3ee;"></i>
+          </div>
+          <h4 class="cert-category__title">🤖 AI & Data Science</h4>
+          <ul class="cert-category__list">
+            <li>Generative AI Professional (GAIPC)</li>
+            <li>Prompt Engineering Specialist</li>
+            <li>TensorFlow Developer</li>
+            <li>Data Science with Python</li>
+            <li>Machine Learning Fundamentals</li>
+          </ul>
+        </div>
+
+        <!-- Agile & Management -->
+        <div class="cert-category">
+          <div class="cert-category__icon">
+            <i class="bi bi-kanban-fill" style="color: #f59e0b;"></i>
+          </div>
+          <h4 class="cert-category__title">📊 Agile & Management</h4>
+          <ul class="cert-category__list">
+            <li>Certified Scrum Master (CSM)</li>
+            <li>Product Owner Certified</li>
+            <li>Lean Six Sigma Yellow Belt</li>
+            <li>Agile Project Management</li>
+            <li>Leadership Essentials</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- CTA para ver todas -->
+      <div class="certifications__cta">
+        <p class="certifications__cta-text">
+          ¿Quieres ver todas mis certificaciones y validar mi expertise?
+        </p>
+        <a href="https://www.linkedin.com/in/gandradev/details/certifications/" target="_blank"
+          class="certifications__cta-button">
+          <i class="bi bi-linkedin"></i>
+          Ver Todas las Certificaciones
+        </a>
+      </div>
+    </section>
+
+    <section class="projects" id="proyectos">
+      <h3 class="skills__title">Proyectos Destacados</h3>
+      <div class="projects__grid">
+        <div class="project-card">
+          <div class="project-card__image-container">
+            <div
+              style="width: 100%; height: 100%; background: linear-gradient(45deg, #1e293b, var(--primary)); display: flex; align-items: center; justify-content: center;">
+              <i class="bi bi-shield-check" style="font-size: 4rem; color: #fff;"></i>
+            </div>
+          </div>
+          <div class="project-card__content">
+            <h4 class="project-card__title">aegis-main</h4>
+            <p class="project-card__desc">Sistema de seguridad y protección avanzada. Un core robusto para aplicaciones
+              críticas desarrollado en JavaScript.</p>
+            <div class="project-card__tags">
+              <span class="project-tag">JavaScript</span>
+              <span class="project-tag">Security</span>
+              <span class="project-tag">Core</span>
+            </div>
+            <div class="project-card__links">
+              <a href="https://github.com/s3codecL/portfolio" target="_blank" class="btn-icon"><i
+                  class="bi bi-github"></i></a>
+              <a href="#" target="_blank" class="btn-icon"><i class="bi bi-box-arrow-up-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card__image-container">
+            <div
+              style="width: 100%; height: 100%; background: linear-gradient(45deg, #a855f7, #22d3ee); display: flex; align-items: center; justify-content: center;">
+              <i class="bi bi-film" style="font-size: 4rem; color: #fff;"></i>
+            </div>
+          </div>
+          <div class="project-card__content">
+            <h4 class="project-card__title">studio_ghibli</h4>
+            <p class="project-card__desc">Una galería encantada que rinde tributo a las obras maestras de Studio Ghibli,
+              con una interfaz fluida y visuales vibrantes.</p>
+            <div class="project-card__tags">
+              <span class="project-tag">JavaScript</span>
+              <span class="project-tag">Frontend</span>
+              <span class="project-tag">Animation</span>
+            </div>
+            <div class="project-card__links">
+              <a href="https://github.com/s3codecL/portfolio" target="_blank" class="btn-icon"><i
+                  class="bi bi-github"></i></a>
+              <a href="#" target="_blank" class="btn-icon"><i class="bi bi-box-arrow-up-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card__image-container">
+            <div
+              style="width: 100%; height: 100%; background: linear-gradient(45deg, #22d3ee, #6366f1); display: flex; align-items: center; justify-content: center;">
+              <i class="bi bi-tv" style="font-size: 4rem; color: #fff;"></i>
+            </div>
+          </div>
+          <div class="project-card__content">
+            <h4 class="project-card__title">one-cinema-app</h4>
+            <p class="project-card__desc">Plataforma de catálogo de cine para explorar las últimas tendencias del
+              séptimo arte. Desarrollado en el marco de Alura ONE.</p>
+            <div class="project-card__tags">
+              <span class="project-tag">JavaScript</span>
+              <span class="project-tag">API Rest</span>
+              <span class="project-tag">Cinema</span>
+            </div>
+            <div class="project-card__links">
+              <a href="https://github.com/s3codecL/portfolio" target="_blank" class="btn-icon"><i
+                  class="bi bi-github"></i></a>
+              <a href="#" target="_blank" class="btn-icon"><i class="bi bi-box-arrow-up-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats" id="stats">
+      <h3 class="skills__title">Actividad en GitHub</h3>
+      <div class="stats__container">
+        <div class="stats__header">
+          <div class="stats__count"><span>563</span> contribuciones en el último año</div>
+          <div class="stats__year"
+            style="background: var(--primary); padding: 0.2rem 1rem; border-radius: 5px; font-weight: 700;">2026</div>
+        </div>
+        <div class="stats__grid-container">
+          <div class="stats__grid">
+            <!-- Row 1 -->
+            <div class="stats__row">
+              <div class="stats__cell"></div>
+              <div class="stats__cell stats__cell--low"></div>
+              <div class="stats__cell"></div>
+              <div class="stats__cell"></div>
+              <div class="stats__cell stats__cell--mid"></div>
+              <div class="stats__cell"></div>
+              <div class="stats__cell stats__cell--low"></div>
+              <div class="stats__cell"></div>
+              <div class="stats__cell stats__cell--high"></div>
+              <div class="stats__cell"></div>
+              <div class="stats__cell"></div>
+              <div class="stats__cell stats__cell--mid"></div>
+              <div class="stats__cell"></div>
+              <div class="stats__cell stats__cell--low"></div>
+              <div class="stats__cell"></div>
+              <div class="stats__cell stats__cell--ultra"></div>
+              <div class="stats__cell"></div>
+            </div>
+            <!-- Row 2 -->
+            <div class="stats__row">
+              <div class="stats__cell"></div>
+              <div class="stats__cell"></div>
+              <div class="stats__cell stats__cell--mid"></div>
+              <div class="stats__cell"></div>
+              <div class="stats__cell stats__cell--high"></div>
+              <div class="stats__cell stats__cell--ultra"></div>
+              <div class="stats__cell"></div>
+              <div class="stats__cell stats__cell--low"></div>
+              <div class="stats__cell"></div>
+              <div class="stats__cell stats__cell--mid"></div>
+              <div class="stats__cell"></div>
+              <div class="stats__cell"></div>
+              <div class="stats__cell stats__cell--low"></div>
+              <div class="stats__cell"></div>
+              <div class="stats__cell stats__cell--high"></div>
+              <div class="stats__cell"></div>
+            </div>
+            <!-- Row 3 -->
+            <div class="stats__row">
+              <div class="stats__cell stats__cell--low"></div>
+              <div class="stats__cell"></div>
+              <div class="stats__cell"></div>
+              <div class="stats__cell stats__cell--mid"></div>
+              <div class="stats__cell"></div>
+              <div class="stats__cell stats__cell--ultra"></div>
+              <div class="stats__cell"></div>
+              <div class="stats__cell stats__cell--high"></div>
+              <div class="stats__cell"></div>
+              <div class="stats__cell stats__cell--low"></div>
+              <div class="stats__cell stats__cell--mid"></div>
+              <div class="stats__cell"></div>
+              <div class="stats__cell"></div>
+              <div class="stats__cell"></div>
+              <div class="stats__cell stats__cell--ultra"></div>
+              <div class="stats__cell"></div>
+            </div>
+          </div>
+        </div>
+        <div class="stats__footer">
+          <span>Menos</span>
+          <div class="stats__legend">
+            <div class="stats__cell"></div>
+            <div class="stats__cell stats__cell--low"></div>
+            <div class="stats__cell stats__cell--mid"></div>
+            <div class="stats__cell stats__cell--high"></div>
+            <div class="stats__cell stats__cell--ultra"></div>
+          </div>
+          <span>Más</span>
+        </div>
+      </div>
+    </section>
+
     <section class="contact" id="contacto">
-      <h3 class="skills__title">Contáctame</h3>
-      <div class="contact__container">
+      <h3 class="skills__title">¿Tienes un proyecto en mente?</h3>
+      <p
+        style="text-align: center; max-width: 600px; margin: 0 auto 3rem; font-size: 1.2rem; color: var(--text-muted);">
+        Estoy disponible para colaborar en proyectos innovadores. Hablemos sobre cómo podemos trabajar juntos.
+      </p>
+      <div style="text-align: center;">
+        <button id="openContactModal" class="btn btn--primary"
+          style="background: var(--primary); color: #fff; padding: 1rem 2.5rem; border-radius: 10px; font-weight: 600; font-size: 1.1rem; border: none; cursor: pointer;">
+          <i class="bi bi-send-fill" style="margin-right: 0.5rem;"></i>
+          Enviar Mensaje
+        </button>
+      </div>
+    </section>
+
+    <!-- Contact Modal -->
+    <div id="contactModal" class="modal">
+      <div class="modal__backdrop"></div>
+      <div class="modal__content">
+        <button class="modal__close" id="closeContactModal">
+          <i class="bi bi-x-lg"></i>
+        </button>
+        <h3 class="modal__title">Contáctame</h3>
+        <p class="modal__subtitle">Completa el formulario y te responderé lo antes posible</p>
+
         <form class="contact__form">
           <div class="form__row">
             <div class="form__group">
-              <input type="text" placeholder="Nombre completo" class="form__input">
+              <input type="text" placeholder="Nombre completo" class="form__input" required>
             </div>
             <div class="form__group">
-              <input type="email" placeholder="Correo electrónico" class="form__input">
+              <input type="email" placeholder="Correo electrónico" class="form__input" required>
             </div>
           </div>
           <div class="form__group">
-            <input type="text" placeholder="Asunto" class="form__input">
+            <input type="text" placeholder="Asunto" class="form__input" required>
           </div>
           <div class="form__group">
-            <textarea rows="5" placeholder="Tu mensaje..." class="form__textarea"></textarea>
+            <textarea rows="5" placeholder="Tu mensaje..." class="form__textarea" required></textarea>
           </div>
-          <button type="submit" class="btn--submit">Enviar Mensaje</button>
+          <button type="submit" class="btn--submit">
+            <i class="bi bi-send-fill" style="margin-right: 0.5rem;"></i>
+            Enviar Mensaje
+          </button>
         </form>
       </div>
-    </section>
+    </div>
   </main>
 
   <footer class="footer">
@@ -151,7 +532,7 @@
           class="bi bi-discord"></i></a>
       <a href="https://www.youtube.com/@s3codecL/" target="_blank" class="social-link"><i class="bi bi-youtube"></i></a>
     </div>
-    <p class="footer__copy">&copy; 2026 GA.DEV - Todos los derechos reservados. Diseñado para el futuro.</p>
+    <p class="footer__copy">&copy; 2026 s3codecl - Todos los derechos reservados. Diseñado para el futuro.</p>
   </footer>
 
   <script type="module" src="/src/main.js"></script>

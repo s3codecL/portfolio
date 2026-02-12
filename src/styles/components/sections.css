@@ -1,0 +1,52 @@
+/* Mejoras generales para todas las secciones */
+section {
+    padding: 120px 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.skills__title {
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    font-weight: 800;
+    margin-bottom: 4rem;
+    text-align: center;
+    letter-spacing: -0.02em;
+}
+
+/* Espaciado mejorado para skills */
+.skills {
+    padding: 120px 2rem;
+}
+
+.skills__grid {
+    gap: 2rem;
+}
+
+/* Mejoras en proyectos */
+.projects {
+    padding: 120px 2rem;
+}
+
+.projects__grid {
+    gap: 3rem;
+}
+
+/* Mejoras en estadísticas */
+.stats {
+    padding: 120px 2rem;
+}
+
+/* Mejoras en contacto */
+.contact {
+    padding: 120px 2rem;
+}
+
+/* Mejoras en experiencia */
+.experience {
+    padding: 120px 2rem;
+}
+
+.exp-item {
+    margin-bottom: 3rem;
+    padding-bottom: 3rem;
+}
