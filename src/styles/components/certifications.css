@@ -127,11 +127,41 @@
 
 @media (max-width: 768px) {
     .certifications {
-        padding: 2rem 1.5rem;
+        padding: 2rem 1rem;
     }
 
     .certifications__grid {
-        grid-template-columns: 1fr;
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
         gap: 1.5rem;
+        padding-bottom: 1.5rem;
+        /* Hide scrollbar for cleaner look */
+        scrollbar-width: none;
+        grid-template-columns: none;
+    }
+
+    .certifications__grid::-webkit-scrollbar {
+        display: none;
+    }
+
+    .cert-category {
+        min-width: 280px;
+        scroll-snap-align: center;
+        /* Ensure 5th item doesn't break layout */
+    }
+
+    .cert-category:nth-child(5) {
+        grid-column: auto;
+    }
+
+    .certifications__cta {
+        margin-top: 1rem;
+        padding: 1.5rem;
+    }
+
+    .certifications__cta-button {
+        width: 100%;
+        justify-content: center;
     }
 }

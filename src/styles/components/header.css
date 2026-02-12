@@ -79,14 +79,19 @@
         position: fixed;
         top: 0;
         right: -100%;
-        width: 100%;
+        width: 75%;
+        /* Viewport width percentage for sidebar effect */
+        max-width: 400px;
         height: 100vh;
         background: rgba(15, 23, 42, 0.98);
         backdrop-filter: blur(20px);
-        gap: 3rem;
+        gap: 2.5rem;
+        /* Slightly reduced gap */
         transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         z-index: 1001;
         padding: 2rem;
+        border-left: 1px solid var(--glass-border);
+        box-shadow: none;
     }
 
     .nav__list.active {

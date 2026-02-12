@@ -76,11 +76,27 @@
 
 .stats__footer {
     display: flex;
-    justify-content: flex-end;
     gap: 1rem;
     font-size: 0.8rem;
     color: var(--text-muted);
     align-items: center;
+}
+
+@media (max-width: 768px) {
+    .stats__container {
+        padding: 1.5rem;
+    }
+
+    .stats__header {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .stats__count {
+        font-size: 1.2rem;
+    }
 }
 
 .stats__legend {
