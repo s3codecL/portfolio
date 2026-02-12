@@ -25,9 +25,14 @@
 
 .certifications__grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
     margin-bottom: 3rem;
+}
+
+/* Fifth item spans 2 columns and centers */
+.cert-category:nth-child(5) {
+    grid-column: 2 / 4;
 }
 
 .cert-category {

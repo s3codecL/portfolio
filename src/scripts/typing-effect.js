@@ -4,11 +4,11 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!typingElement) return;
 
     const phrases = [
-        '🚀 4+ Años de Experiencia Profesional',
-        '🎓 70+ Certificaciones | Google | Fortinet | Microsoft | Oracle',
-        '🔐 Cybersecurity | DevOps | Full Stack | Data Science',
-        '🏆 Developer Multi-Certificado',
-        '🇨🇱 Trabajo Remoto | Disponible para Oportunidades'
+        '4+ Años de Experiencia Profesional',
+        '70+ Certificaciones | Google | Fortinet | Microsoft | Oracle',
+        'Cybersecurity | DevOps | Full Stack | Data Science',
+        'Developer Multi-Certificado',
+        'Trabajo Remoto | Disponible para Oportunidades'
     ];
 
     let phraseIndex = 0;
