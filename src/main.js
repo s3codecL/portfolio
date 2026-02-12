@@ -16,5 +16,6 @@ import './styles/components/tech-stack.css';
 import './scripts/modal.js';
 import './scripts/typing-effect.js';
 import './scripts/contact.js';
+import './scripts/mobile-menu.js';
 
 console.log('Portafolio 2026 cargado exitosamente');

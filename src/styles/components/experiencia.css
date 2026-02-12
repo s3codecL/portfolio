@@ -53,5 +53,11 @@
 @media (max-width: 768px) {
     .experience {
         padding-inline: 1.5rem;
+        padding-top: 80px;
+    }
+
+    .exp-item {
+        padding-left: 2rem;
+        padding-bottom: 3rem;
     }
 }

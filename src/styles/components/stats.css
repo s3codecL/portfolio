@@ -34,6 +34,9 @@
 .stats__grid-container {
     overflow-x: auto;
     padding-bottom: 1rem;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary) transparent;
 }
 
 .stats__grid {
