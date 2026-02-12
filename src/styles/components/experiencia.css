@@ -1,0 +1,57 @@
+.experience {
+    padding: 100px 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.exp-item {
+    position: relative;
+    padding-left: 3rem;
+    padding-bottom: 4rem;
+    border-left: 1px solid var(--glass-border);
+}
+
+.exp-item::before {
+    content: '';
+    position: absolute;
+    left: -6px;
+    top: 0;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: var(--primary);
+    box-shadow: 0 0 10px var(--primary);
+}
+
+.exp-date {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.exp-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+}
+
+.exp-company {
+    font-size: 1.1rem;
+    color: var(--accent);
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.exp-desc {
+    color: var(--text-muted);
+    line-height: 1.7;
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .experience {
+        padding-inline: 1.5rem;
+    }
+}

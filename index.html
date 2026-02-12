@@ -1,452 +1,160 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gustavo Andrade | Full Stack Developer</title>
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
-  <!-- Option 1: Include in HTML -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-  <title> Mi Portafolio</title>
-  <link rel="stylesheet" href="/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
 
 <body>
-  <div class="container__principal">
-    
-    <!-- Header del portafolio -->
-    <header>
-          
-      <nav>
-        <ul class="menu__list">
-          <li class="menu__list__item"><a href="#sobre-mi">Sobre mi</a></li> 
-          <li class="menu__list__item"><a href="#skills">Skills</a></li>
-          <li class="menu__list__item"><a href="#hobbies">Hobbies</a></li>
-          <li class="menu__list__item"><a href="#formacion">Formación</a></li>
-          <li class="menu__list__item"><a href="#experiencia">Experiencia</a></li>
-          <li class="menu__list__item"><a href="#contacto">Contacto</a></li>
-        </ul>
-        <button id="dark-mode-toggle" class="dark-mode-button" disabled>Modo Oscuro</button>     
-      </nav>
-    </header>
-
-
-    <!-- seccion del sidebar y el main -->
-    <div class="wrapper">
-
-      <aside>
-        <section class="informacion__personal">
-
-          <!-- datos personales y fotografia -->
-          <div class="datos__personales">
-            <div class="informacion__personal__area__img">
-              <img src="assets/fondo3.1.jpg" alt="">
-            </div>
-            <h4 class="informacion__personal_nombre">Gustavo Andrade</h4>
-            <span class="informacion__personal_profesion">Developer</span>
-    
-            <ul class="informacion__personal_social__link mb-30">
-              <li>
-                <a href="https://www.linkedin.com/in/gandradev/" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
-              </li>
-              <li>
-                <a href="https://github.com/s3codecL" class="github" target="_blank"><i class="bi bi-github"></i></a>
-              </li>
-              <li>
-                <a href="https://discord.com/channels/@s3codecl#6353" class="discord" target="_blank"><i class="bi bi-discord"></i></a>
-              </li>            
-              <li>
-                <a href="https://www.youtube.com/@s3codecL/" class="youtube" target="_blank"><i class="bi bi-youtube"></i></a>
-              </li>
-            </ul>
-          </div>
-
-          <!-- CONTACTO Y RESIDENCIA --> 
-          <div class="contacto__residencia">
-            <ul class="informacion__personal__contacto">
-              <li class="item_icono__texto">
-                <div class="icono location">
-                  <i class="bi bi-geo-alt"></i>
-                </div>
-                <div class="texto">
-                  <h5 class="titulo_lista">País</h5>
-                  <h4 class="subtitulo_lista">Chile</h4>
-                </div>
-              </li>
-    
-              <li class="item_icono__texto">
-                <div class="icono mail">
-                  <i class="bi bi-envelope"></i>
-                </div>
-                <div class="texto">
-                  <h5 class="titulo_lista">Email</h5>
-                  <h4 class="subtitulo_lista">gandradev@gmail.com</h4>
-                </div>
-              </li>
-    
-              <li class="item_icono__texto">
-                <div class="icono phone">
-                  <i class="bi bi-phone"></i>
-                </div>
-                <div class="texto">
-                  <h5 class="titulo_lista">Contacto</h5>
-                  <h4 class="subtitulo_lista">+569 55555555</h4>
-                </div>
-              </li>
-            </ul>
-    
-            <div class="btn__descargar__cv" >
-              <div class="button-wrapper">
-                <a href="/assets/attachment/cv202407.pdf" download="CV_Julio_20244.pdf" class="button">
-                    <span class="btn__texto">Descargar mi CV</span>
-                    <span class="btn__icono">
-                        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" role="img" width="24" height="24" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
-                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17"></path>
-                        </svg>
-                    </span>
-                </a>
-            </div>
-            
-            </div>
-          </div>          
-        </section>
-      </aside>
-      <main>
-
-        <div class="wrapper-main">
-          <section>
-            <div class="section__container">
-              <h3 class="title__section title__barra" id="sobre-mi">Sobre mi</h3>
-
-              <p class="about__paragraph">Estudiante de tercer año de Ing en Data Science y entusiasta Desarrollador con una sólida motivación para 
-                perfeccionar mis habilidades y avanzar profesionalmente.
-                Destaco por mi capacidad resolutiva, compromiso, habilidades interpersonales y proactividad, enfrento con confianza nuevos desafíos,
-                impulsado por un espíritu innovador.
-                Actualmente estoy cursando la Especialidad DevOps Kibernum It Academy y el Bootcamp Front End G6 REACT en ONE.</p>
-              <p class="about__paragraph">Full Stack Python dev | Django | Front End dev | Data Science engineering student 3/4 | Data Analyst 100%</p>
-  
-              <img src="assets/blanc.jpg">
-            </div>
-          </section>
-  
-          <section>
-            <div class="section__container">
-              <h3 class="title__section" id="skills">Skills</h3>
-              <div class="experiencia__area">
-                <ul>
-                  <li>
-                    <div class="list_inner">
-                      <!-- <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="m3 2 1.578 17.824L12 22l7.467-2.175L21 2H3Zm14.049 6.048H9.075l.172 2.016h7.697l-.626 6.565-4.246 1.381-4.281-1.455-.288-2.932h2.024l.16 1.411 2.4.815 2.346-.763.297-3.005H7.416l-.562-6.05h10.412l-.217 2.017Z"/>
-                      </svg> -->
-                      
-                      <img src="assets/svg/html5.svg" alt="">
-                      <a class="elisc_tm_full_link" a="" href="#"></a>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="list_inner">                      
-                      <img src="assets/svg/css.svg" alt="">                      
-                      <a class="elisc_tm_full_link" a="" href="#"></a>
-                    </div>
-                  </li>
-                  
-                  <li>
-                    <div class="list_inner">
-                      <img src="assets/svg/javascript.svg" alt="">  
-                      <a class="elisc_tm_full_link" a="" href="#"></a>
-                    </div>
-                  </li>
-                  
-                  <li>
-                    <div class="list_inner">
-                      <img src="assets/svg/python.svg" alt="">
-                      <a class="elisc_tm_full_link" a="" href="#"></a>
-                    </div>
-                  </li>
-                  
-                  <li>
-                    <div class="list_inner">
-                      <img src="assets/svg/postgresql.svg" alt="">
-                      <a class="elisc_tm_full_link" a="" href="#"></a>
-                    </div>
-                  </li>
-
-                  <li>
-                    <div class="list_inner">
-                      <img src="assets/svg/bootstrap.svg" alt="">
-                      <a class="elisc_tm_full_link" a="" href="#"></a>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="list_inner">
-                      <img src="assets/svg/react.svg" alt="">
-                      <a class="elisc_tm_full_link" a="" href="#"></a>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="list_inner">
-                      <img src="assets/svg/django.svg" alt="">
-                      <a class="elisc_tm_full_link" a="" href="#"></a>
-                    </div>
-                  </li>
-                </ul>
-
-              </div>
-
-            </div>
-          </section>
-
-
-
-          <!-- <section>
-            <div class="section__container">
-              <h3 class="title__section">Skills</h3>
-
-              <div class="skills__line">
-                <div class="skills__box">
-                  <ul>
-                    <li class="skills__img"><img src="assets\htlm.png"></li>
-                    <li class="skills__name"> HTML 5</li>
-                  </ul>
-                </div>
-
-                <div class="skills__box">
-                  <ul>
-                    <li class="skills__img"> <img src="assets\css_icon.png" alt=""> </li>
-                    <li class="skills__name">CSS</li>
-                  </ul>
-                </div>
-
-                <div class="skills__box">
-                  <ul>
-                    <li class="skills__img"> <img src="assets\js_icon.png" alt=""></li>
-                  <li class="skills__name">Javascript</li>
-                  </ul>
-                </div>
-
-                <div class="skills__box">
-                  <ul>
-                    <li class="skills__img"><img src="assets\nodejs_icon.png" alt=""></li>
-                  <li class="skills__name">Node JS</li> 
-                  </ul>
-                </div>
-
-                <div class="skills__box">
-                  <ul>
-                    <li class="skills__img"><img src="assets\nodejs_icon.png" alt=""></li>
-                  <li class="skills__name">Angular</li> 
-                  </ul>
-                </div>
-
-                <div class="skills__box">
-                  <ul>
-                    <li class="skills__img"><img src="assets\nodejs_icon.png" alt=""></li>
-                  <li class="skills__name">Vue JS</li> 
-                  </ul>
-                </div>
-
-                <div class="skills__box">
-                  <ul>
-                    <li class="skills__img"><img src="assets\nodejs_icon.png" alt=""></li>
-                  <li class="skills__name">Asp.Net && C#</li> 
-                  </ul>
-                </div>
-
-                <div class="skills__box">
-                  <ul>
-                    <li class="skills__img"><img src="assets\nodejs_icon.png" alt=""></li>
-                  <li class="skills__name">Oracle DB</li> 
-                  </ul>
-                </div>
-              </div>
-
-
-
-            </div>
-          </section> -->
-                    
-          <section>
-            <div class="section__container">
-              <h3 class="title__section" id="experiencia">Experiencia</h3>
-              <h2 class="informacion__personal_nombre">Unilink International Holding</h2>
-                <p>Jornada completa · 2 años 4 meses · En remoto · Región Metropolitana de Santiago, Chile</p>  
-                <div class="wrapper-main"><br>
-              <h2 class="informacion__personal_nombre">Development Operations</h2>
-                <p>jul. 2024 - actualidad · 1 mes ·</p>  
-                <div class="wrapper-main"><br>       
-                  <p class="about__paragraph">
-                  En mi rol de Analista DevOps en Unilink International Holding, he adquirido una experiencia significativa en la
-                  coordinación y ejecución de procesos de DevOps, particularmente en entornos que utilizan herramientas backend de Python,
-                  además de mantener entornos integrados como Grafana y Azure, así como sistemas CRM como Zoho y Aircall, mi enfoque ha
-                  sido siempre en la mejora continua y en asegurar un flujo de trabajo cohesivo y eficiente.
-                  
-                  También he colaborado en el desarrollo e implementación de aplicaciones Full Stack con Django, específicamente para el
-                  registro de
-                  proveedores, esta experiencia me ha proporcionado una sólida comprensión del desarrollo backend utilizando Python,
-                  enfocándome en
-                  crear soluciones robustas y escalables.
-                  </p>                
-                </div>
-                <h2 class="informacion__personal_nombre">Analista DevOps</h2>
-                <p>abr. 2023 - jul. 2024 · 1 año 4 meses ·</p>  
-                <div class="wrapper-main"><br>       
-                  <p class="about__paragraph">
-                  En mi rol de Analista DevOps en Unilink International Holding, he adquirido una experiencia significativa en la
-                  coordinación y ejecución de procesos de DevOps, particularmente en entornos que utilizan herramientas backend de Python,
-                  además de mantener entornos integrados como Grafana y Azure, así como sistemas CRM como Zoho y Aircall, mi enfoque ha
-                  sido siempre en la mejora continua y en asegurar un flujo de trabajo cohesivo y eficiente.
-                  
-                  También he colaborado en el desarrollo e implementación de aplicaciones Full Stack con Django, específicamente para el
-                  registro de
-                  proveedores, esta experiencia me ha proporcionado una sólida comprensión del desarrollo backend utilizando Python,
-                  enfocándome en
-                  crear soluciones robustas y escalables.
-                  </p>                
-                </div>
-                  <h2 class="informacion__personal_nombre">Analista de Soporte Operacional</h2>
-                  <p>abr. 2022 - abr. 2023 · 1 año 1 mes ·</p>
-                <div class="wrapper-main"><br>                  
-                  <p class="about__paragraph">En mi rol de Analista de Soporte Operacional en Unilink International Holding, he
-                    desarrollado habilidades
-                    clave en la supervisión y soporte de infraestructuras de TI y operaciones diarias, estoy especializado en la
-                    identificación y resolución
-                    de problemas técnicos que afectan la eficiencia operacional, mi experiencia incluye la gestión de bases de datos y el
-                    soporte técnico a
-                    sistemas operativos y software de oficina, utilizando herramientas como SQL para análisis de datos y sistemas de
-                    tickets con un CRM,
-                    ticketing con Planner, List para gestionar eficazmente las solicitudes de frente al cliente.<br>
-                    
-                    Además, he participado activamente en la implementación de políticas de seguridad de TI y en la capacitación de
-                    usuarios para mejorar 
-                    la comprensión y el cumplimiento de estas políticas, el objetivo está en optimizar los procesos para maximizar la
-                    productividad y
-                    reducir el tiempo de inactividad, asegurando así un entorno operativo estable y seguro, además de mantener entornos
-                    integrados como
-                    Grafana y Azure, así como sistemas CRM como Zoho y Aircall, participando activamente en la mejora continua
-                    asegurarando un flujo de
-                    trabajo cohesivo y eficiente, con un enfoque claro en la continuidad operativa.
-                  </p>
-                </div>
-          </section>
-
-          <section>
-            <div class="section__container">
-              <h3 class="title__section" id="hobbies">Hobbies</h3>
-              <div class="hobbies__line">
-                                
-                <div class="hobbies__box">
-                  <ul>
-                    <li class="hobbies__img"> <img src="assets\guitar_icon.png" alt=""></li>
-                    <li class="hobbies__name">Tocar Guitarra</li>
-                  </ul>
-                </div>
-                
-                <div class="hobbies__box">
-                  <ul>
-                    <li class="hobbies__img"> <img src="assets\headphones_icon.png" alt=""></li>
-                    <li class="hobbies__name">Oir música</li>
-                  </ul>
-                </div>
-                                
-                <div class="hobbies__box">
-                  <ul>
-                    <li class="hobbies__img"> <img src="assets\forkspoon_icon.png" alt=""> </li>
-                    <li class="hobbies__name">Cocinar</li>
-                  </ul>
-                </div>
-                
-                <div class="hobbies__box">
-                  <ul>
-                    <li class="hobbies__img"> <img src="assets\camera_icon.png" alt=""> </li>
-                    <li class="hobbies__name">Tomar fotos</li>
-                  </ul>
-                </div>
-                </div>
-            </div>
-          </section>
-
-          <section>
-            <div class="section__container">
-              <h3 class="title__section" id="formacion">Formación Academica</h3>
-              <div class="hobbies__line">
-                
-              </div>
-                
-          </section>
-
-          <section>
-            <!-- sección contacto-->
-            <div class="section__container">
-              <section id="contacto">
-                <h3 class="title__section">Contactame</h3>
-                <div class="contenedor-form">
-                  <form action="">
-                    <div class="fila-mitad">
-                      <input type="text" placeholder="Nombre Completo" class="input-mitad">
-                      <input type="text" placeholder="Correo" class="input-mitad">
-                    </div>
-                    <div class="fila">
-                      <input type="text" placeholder="Tema..." class="input-full">
-                    </div>
-                    <div class="fila">
-                      <textarea name="" id="" cols="20" rows="10" placeholder="Tu Mensaje ..." class="input-full"></textarea>
-                    </div>
-                    <div class="btn__descargar__cv" >
-                      <div class="button-wrapper">
-                        <a href=""  class="button">
-                            <span class="btn__texto">Enviar</span>
-                            <span class="btn__icono">
-                              <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" role="img" width="24" height="24" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
-                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M22 4H2v16h20V4zm-2 4l-8 5-8-5V6l8 5 8-5v2z"></path>
-                            </svg>                                                       
-                            </span>
-                        </a>
-                    </div>
-                  </form>
-                </div>
-              </section>
-            </div>
-          </section>
-
-          <section>
-            <!-- sección footer-->
-            <footer>
-              <div class="grupo-2">
-                <small>&copy; 2024 <b>s3codecl</b> - Todos los Derechos Reservados</small>
-                <h2>SIGUEME</h2>
-                <div class="redes">
-                  <ul class="informacion__personal_social__link mb-30">
-                    <li>
-                      <a href="https://www.linkedin.com/in/gandradev/" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
-                    </li>
-                    <li>
-                      <a href="https://github.com/s3codecL" class="github" target="_blank"><i class="bi bi-github"></i></a>
-                    </li>
-                    <li>
-                      <a href="https://discord.com/channels/@s3codecl#6353" class="discord" target="_blank"><i class="bi bi-discord"></i></a>
-                    </li>            
-                    <li>
-                      <a href="https://www.youtube.com/@s3codecL/" class="youtube" target="_blank"><i class="bi bi-youtube"></i></a>
-                    </li>
-                  </ul>
-              </div>             
-          
-            </footer>
-          </section>
-
-
-        </div>
-        
-      </main>
-
+  <header class="header">
+    <div class="header__logo">
+      <span style="font-weight: 800; letter-spacing: -1px;">GA.DEV</span>
     </div>
+    <nav class="header__nav">
+      <ul class="nav__list">
+        <li><a href="#sobre-mi" class="nav__link">Sobre mí</a></li>
+        <li><a href="#skills" class="nav__link">Habilidades</a></li>
+        <li><a href="#experiencia" class="nav__link">Experiencia</a></li>
+        <li><a href="#contacto" class="nav__link">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="header__actions">
+      <a href="assets/attachment/cv202407.pdf" download class="btn"
+        style="border: 1px solid var(--primary); color: var(--primary); padding: 0.5rem 1.2rem; border-radius: 8px; font-size: 0.9rem; font-weight: 600;">CV</a>
+    </div>
+  </header>
 
-  </div>
-  <script src="/script.js"></script>
+  <main>
+    <section class="hero" id="sobre-mi">
+      <div class="hero__content">
+        <span class="hero__welcome" style="color: var(--primary); font-weight: 600;">Bienvenido a mi portafolio</span>
+        <h1>Gustavo Andrade</h1>
+        <p>Full Stack Python Dev | Django | Front End | Data Science Engineering Student. Especialista en crear
+          soluciones robustas, escalables y con una estética de última generación.</p>
+        <div class="hero__ctas">
+          <a href="#contacto" class="btn btn--primary"
+            style="background: var(--primary); color: #fff; padding: 0.8rem 2rem; border-radius: 10px; font-weight: 600; display: inline-block;">Hablemos</a>
+        </div>
+      </div>
+      <div class="hero__image-container">
+        <div class="hero__glow"></div>
+        <div class="hero__image-wrapper">
+          <img src="assets/Retrato Blanco y negro (4).jpeg" alt="Gustavo Andrade" class="hero__image">
+        </div>
+      </div>
+    </section>
+
+    <section class="skills" id="skills">
+      <h3 class="skills__title">Habilidades Técnicas</h3>
+      <div class="skills__grid">
+        <div class="skill-card">
+          <img src="assets/svg/python.svg" alt="Python">
+          <span>Python</span>
+        </div>
+        <div class="skill-card">
+          <img src="assets/svg/django.svg" alt="Django">
+          <span>Django</span>
+        </div>
+        <div class="skill-card">
+          <img src="assets/svg/react.svg" alt="React">
+          <span>React</span>
+        </div>
+        <div class="skill-card">
+          <img src="assets/svg/javascript.svg" alt="JavaScript">
+          <span>JavaScript</span>
+        </div>
+        <div class="skill-card">
+          <img src="assets/svg/html5.svg" alt="HTML5">
+          <span>HTML5</span>
+        </div>
+        <div class="skill-card">
+          <img src="assets/svg/css.svg" alt="CSS3">
+          <span>CSS3</span>
+        </div>
+        <div class="skill-card">
+          <img src="assets/svg/postgresql.svg" alt="PostgreSQL">
+          <span>PostgreSQL</span>
+        </div>
+        <div class="skill-card">
+          <img src="assets/svg/bootstrap.svg" alt="Bootstrap">
+          <span>Bootstrap</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="experience" id="experiencia">
+      <h3 class="skills__title">Experiencia Profesional</h3>
+
+      <div class="exp-item">
+        <span class="exp-date">Jul 2024 — Actualidad</span>
+        <h4 class="exp-title">Development Operations</h4>
+        <span class="exp-company">Unilink International Holding</span>
+        <p class="exp-desc">Coordinación y ejecución de procesos DevOps en entornos Python, manteniendo sistemas como
+          Grafana, Azure, Zoho y Aircall. Mejora continua y flujo de trabajo eficiente.</p>
+      </div>
+
+      <div class="exp-item">
+        <span class="exp-date">Abr 2023 — Jul 2024</span>
+        <h4 class="exp-title">Analista DevOps</h4>
+        <span class="exp-company">Unilink International Holding</span>
+        <p class="exp-desc">Implementación de aplicaciones Full Stack con Django y gestión de infraestructura en la
+          nube. Enfoque en soluciones robustas y escalables.</p>
+      </div>
+
+      <div class="exp-item" style="border-bottom: none; padding-bottom: 0;">
+        <span class="exp-date">Abr 2022 — Abr 2023</span>
+        <h4 class="exp-title">Analista de Soporte Operacional</h4>
+        <span class="exp-company">Unilink International Holding</span>
+        <p class="exp-desc">Supervisión de infraestructura TI, resolución de problemas críticos y gestión de bases de
+          datos utilizando SQL. Líder en políticas de seguridad TI.</p>
+      </div>
+    </section>
+
+    <section class="contact" id="contacto">
+      <h3 class="skills__title">Contáctame</h3>
+      <div class="contact__container">
+        <form class="contact__form">
+          <div class="form__row">
+            <div class="form__group">
+              <input type="text" placeholder="Nombre completo" class="form__input">
+            </div>
+            <div class="form__group">
+              <input type="email" placeholder="Correo electrónico" class="form__input">
+            </div>
+          </div>
+          <div class="form__group">
+            <input type="text" placeholder="Asunto" class="form__input">
+          </div>
+          <div class="form__group">
+            <textarea rows="5" placeholder="Tu mensaje..." class="form__textarea"></textarea>
+          </div>
+          <button type="submit" class="btn--submit">Enviar Mensaje</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__socials">
+      <a href="https://www.linkedin.com/in/gandradev/" target="_blank" class="social-link"><i
+          class="bi bi-linkedin"></i></a>
+      <a href="https://github.com/s3codecL/portfolio" target="_blank" class="social-link"><i
+          class="bi bi-github"></i></a>
+      <a href="https://discord.com/channels/@s3codecl#6353" target="_blank" class="social-link"><i
+          class="bi bi-discord"></i></a>
+      <a href="https://www.youtube.com/@s3codecL/" target="_blank" class="social-link"><i class="bi bi-youtube"></i></a>
+    </div>
+    <p class="footer__copy">&copy; 2026 GA.DEV - Todos los derechos reservados. Diseñado para el futuro.</p>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
 </body>
 
 </html>
