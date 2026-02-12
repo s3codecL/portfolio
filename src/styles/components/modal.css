@@ -1,14 +1,14 @@
-/* Modal Styles */
+/* Modal Base Styles */
 .modal {
     position: fixed;
     inset: 0;
-    z-index: 9999;
+    z-index: 1000;
     display: flex;
     align-items: center;
     justify-content: center;
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .modal.active {
@@ -17,55 +17,44 @@
 }
 
 .modal__backdrop {
-    position: fixed;
+    position: absolute;
     inset: 0;
     background: rgba(0, 0, 0, 0.7);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(8px);
 }
 
 .modal__content {
     position: relative;
-    background: rgba(15, 23, 42, 0.95);
-    backdrop-filter: blur(20px);
+    background: rgba(20, 20, 30, 0.95);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 20px;
     padding: 3rem;
-    max-width: 600px;
     width: 90%;
-    max-height: 90vh;
-    overflow-y: auto;
+    max-width: 500px;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-    transform: scale(0.9) translateY(20px);
-    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-    z-index: 10000;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+    z-index: 1001;
 }
 
 .modal.active .modal__content {
-    transform: scale(1) translateY(0);
+    transform: translateY(0);
 }
 
 .modal__close {
     position: absolute;
     top: 1.5rem;
     right: 1.5rem;
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background: transparent;
+    border: none;
+    color: var(--text-muted);
+    font-size: 1.5rem;
     cursor: pointer;
-    color: #fff;
-    font-size: 1.2rem;
-    transition: all 0.3s ease;
+    transition: color 0.3s ease;
 }
 
 .modal__close:hover {
-    background: rgba(255, 255, 255, 0.1);
-    transform: rotate(90deg);
+    color: #fff;
 }
 
 .modal__title {
@@ -76,14 +65,16 @@
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-align: center;
 }
 
 .modal__subtitle {
+    text-align: center;
     color: var(--text-muted);
     margin-bottom: 2rem;
 }
 
-/* Contact Form in Modal */
+/* Form Styles */
 .contact__form {
     display: flex;
     flex-direction: column;
@@ -96,20 +87,15 @@
     gap: 1.5rem;
 }
 
-.form__group {
-    display: flex;
-    flex-direction: column;
-}
-
 .form__input,
 .form__textarea {
-    background: rgba(255, 255, 255, 0.05);
+    width: 100%;
+    background: rgba(255, 255, 255, 0.03);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     padding: 1rem;
     color: #fff;
-    font-family: 'Outfit', sans-serif;
-    font-size: 1rem;
+    font-family: inherit;
     transition: all 0.3s ease;
 }
 
@@ -117,20 +103,15 @@
 .form__textarea:focus {
     outline: none;
     border-color: var(--primary);
-    background: rgba(255, 255, 255, 0.08);
-    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
-}
-
-.form__textarea {
-    resize: vertical;
-    min-height: 120px;
+    background: rgba(99, 102, 241, 0.05);
+    box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.1);
 }
 
 .btn--submit {
     background: var(--primary);
     color: #fff;
-    padding: 1rem 2rem;
     border: none;
+    padding: 1rem;
     border-radius: 10px;
     font-weight: 600;
     font-size: 1.1rem;
@@ -139,10 +120,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 1rem;
 }
 
 .btn--submit:hover {
-    background: #5558e3;
+    background: #4f46e5;
     transform: translateY(-2px);
     box-shadow: 0 10px 20px rgba(99, 102, 241, 0.3);
 }
@@ -155,8 +137,50 @@
     .modal__content {
         padding: 2rem;
     }
+}
 
-    .modal__title {
-        font-size: 1.5rem;
-    }
+/* SweetAlert2 Custom Theme for Portfolio */
+div:where(.swal2-container) div:where(.swal2-popup) {
+    background: rgba(20, 20, 30, 0.95) !important;
+    border: 1px solid rgba(99, 102, 241, 0.3) !important;
+    backdrop-filter: blur(10px) !important;
+    border-radius: 20px !important;
+    box-shadow: 0 0 40px rgba(99, 102, 241, 0.2) !important;
+}
+
+div:where(.swal2-container) h2:where(.swal2-title) {
+    color: #fff !important;
+    font-family: 'Outfit', sans-serif !important;
+    font-weight: 700 !important;
+}
+
+div:where(.swal2-container) div:where(.swal2-html-container) {
+    color: var(--text-muted) !important;
+    font-family: 'Outfit', sans-serif !important;
+}
+
+div:where(.swal2-icon).swal2-success {
+    border-color: var(--primary) !important;
+    color: var(--primary) !important;
+}
+
+div:where(.swal2-icon).swal2-success [class^=swal2-success-line] {
+    background-color: var(--primary) !important;
+}
+
+div:where(.swal2-icon).swal2-success .swal2-success-ring {
+    border: .25em solid rgba(99, 102, 241, 0.2) !important;
+}
+
+div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
+    background: var(--primary) !important;
+    border-radius: 10px !important;
+    font-family: 'Outfit', sans-serif !important;
+    font-weight: 600 !important;
+    padding: 1rem 2rem !important;
+    box-shadow: 0 10px 20px rgba(99, 102, 241, 0.3) !important;
+}
+
+div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm:focus {
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.5) !important;
 }
