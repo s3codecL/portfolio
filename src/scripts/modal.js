@@ -27,15 +27,5 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Handle form submission
-    const form = modal?.querySelector('.contact__form');
-    form?.addEventListener('submit', (e) => {
-        e.preventDefault();
-
-        // Aquí puedes agregar la lógica para enviar el formulario
-        // Por ahora solo mostramos un mensaje de éxito
-        alert('¡Mensaje enviado! Te responderé pronto.');
-        closeModal();
-        form.reset();
-    });
+    // Form submission is handled in contact.js
 });
