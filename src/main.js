@@ -17,5 +17,6 @@ import './scripts/modal.js';
 import './scripts/typing-effect.js';
 import './scripts/contact.js';
 import './scripts/mobile-menu.js';
+import './scripts/experience.js';
 
 console.log('Portafolio 2026 cargado exitosamente');
